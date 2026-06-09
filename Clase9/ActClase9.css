@@ -1,0 +1,194 @@
+#cuerpo{
+    width: auto;
+    margin: 20px;
+}
+
+#header{
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.Z_F5E4kZ7oLSb55bP8HKvQHaE7?w=2000&h=1333&rs=1&pid=ImgDetMain&o=7&rm=3);
+}
+
+#cabecera{
+    display: flex;
+    /*width: 100%;
+    max-width: auto;*/
+    justify-content: space-between;
+    border-top: 2px solid seagreen;
+    border-bottom: 2px solid seagreen;
+}
+
+#titulos{
+    /*/display: flex;
+    align-items: center;
+    justify-content: center;*/
+    width: 100%;
+    text-align: center;
+    margin: auto; /*!*/
+    border-bottom: 10px solid rgb(105, 138, 55);
+}
+
+#titulo{
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1px;
+}
+
+#subtitulo{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+#titulo_menu{
+    margin: 10px 25px;
+    color: rgb(29, 89, 29);
+}
+#menu{
+    float: left;
+    width: 30%;
+    background-color: rgb(116, 172, 116);
+    padding-bottom: auto;
+    margin-top: 15px;
+}
+
+#contenido{
+    width: 65%;
+    float: right;
+    margin-top: 5px;
+}
+.boton{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+.bot{
+    background-color: rgb(245, 245, 96);
+    padding: 8px;
+    border: none;
+}
+#imagen{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+}
+
+#titulo_art{
+    border-bottom: 3px solid rgb(105, 138, 55);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+.secciones{
+    padding: 5px;
+    border-bottom: 3px solid whitesmoke;
+}
+.tabla_cont{
+    border-bottom: 10px solid white;
+}
+
+p{
+    margin: 15px 25px;
+}
+
+h3{
+    margin: 10px 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+#pie{
+    clear: both;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 2px solid rgb(105, 138, 55);
+}
+
+.contacto{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid pink;
+}
+.formulario{
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: start;
+}
+label{
+    margin: 10px
+    ;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+.contacto{
+    width:100%;
+    padding:20px;
+    border:1px solid lightgray;
+}
+
+#formulario{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.campo{
+    display:flex;
+    flex-direction:column;
+}
+
+.campo input{
+    padding:10px;
+}
+
+.error{
+    color:red;
+    font-size:14px;
+    margin-top:5px;
+}
+
+.botonEnviar{
+    grid-column:1 / 3;
+    text-align:center;
+}
+
+.botonEnviar button{
+    padding:10px 25px;
+    background-color:rgb(105,138,55);
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    #menu{
+        width:100%;
+        float:none;
+    }
+
+    #contenido{
+        width:100%;
+        float:none;
+    }
+
+    #formulario{
+        grid-template-columns:1fr;
+    }
+
+    .botonEnviar{
+        grid-column:auto;
+    }
+
+    #titulo{
+        font-size:60px;
+    }
+}
