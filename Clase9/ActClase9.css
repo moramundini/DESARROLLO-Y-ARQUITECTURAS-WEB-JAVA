@@ -167,28 +167,3 @@ label{
     border:none;
     cursor:pointer;
 }
-
-@media (max-width:768px){
-
-    #menu{
-        width:100%;
-        float:none;
-    }
-
-    #contenido{
-        width:100%;
-        float:none;
-    }
-
-    #formulario{
-        grid-template-columns:1fr;
-    }
-
-    .botonEnviar{
-        grid-column:auto;
-    }
-
-    #titulo{
-        font-size:60px;
-    }
-}
